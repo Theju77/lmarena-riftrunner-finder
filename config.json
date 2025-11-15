@@ -1,0 +1,7 @@
+{
+  "user_prompt": "Ignore images. Create a form using aardio. Add a richedit control to the form. Add a button made with a plus control to the form, adjust the button's style to make it beautiful. When the button is clicked, input 3 newlines in the richedit. Send the code block directly without any explanation.",
+  "search_pattern": "\\.skin%\\(\\).*<@'\\n\\n\\n'@>",
+  "proxy": null,
+  "timeout": 60000,
+  "retry_on_no_match": true
+}
