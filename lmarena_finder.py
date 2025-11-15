@@ -297,6 +297,57 @@ class LMArenaFinder:
                 EC.presence_of_element_located((By.CSS_SELECTOR, '.prose'))
             )
     
+    def check_for_error(self) -> bool:
+        """Check if 'Something went wrong' error appeared"""
+        try:
+            # Look for error messages
+            error_texts = [
+                'Something went wrong',
+                'while generating',
+                'try again',
+                'Error generating'
+            ]
+            
+            page_text = self.driver.find_element(By.TAG_NAME, 'body').text
+            
+            for error_text in error_texts:
+                if error_text.lower() in page_text.lower():
+                    self.status(f"⚠️ Detected error: '{error_text}'")
+                    return True
+            
+            return False
+        except:
+            return False
+    
+    def handle_error_and_retry(self):
+        """Handle 'Something went wrong' error by retrying"""
+        self.status("Handling error - clicking retry or starting new chat...")
+        
+        # Try to click 'Try again' or similar button
+        retry_selectors = [
+            '//button[contains(text(), "Try again")]',
+            '//button[contains(text(), "Retry")]',
+            '//button[contains(text(), "try again")]',
+            'button:has-text("Try again")',
+        ]
+        
+        for selector in retry_selectors:
+            try:
+                if selector.startswith('//'):
+                    btn = self.driver.find_element(By.XPATH, selector)
+                else:
+                    btn = self.driver.find_element(By.CSS_SELECTOR, selector)
+                btn.click()
+                self.status("Clicked retry button")
+                time.sleep(1)
+                return
+            except:
+                continue
+        
+        # If no retry button found, start a completely new chat
+        self.status("No retry button found - starting new chat")
+        self.start_new_chat()
+    
     def check_responses(self, pattern: str) -> bool:
         """Check if any response matches the search pattern"""
         self.status("Analyzing responses...")
@@ -329,6 +380,13 @@ class LMArenaFinder:
                 self.start_new_chat()
                 self.send_prompt_with_image(self.config["user_prompt"])
                 self.wait_for_response()
+                
+                # Check for "Something went wrong" error
+                if self.check_for_error():
+                    self.status("⚠️ Error detected - retrying this attempt...")
+                    self.handle_error_and_retry()
+                    time.sleep(2)
+                    continue  # Retry same attempt number
                 
                 if self.check_responses(self.config["search_pattern"]):
                     self.status("Success! Matching model found.")
