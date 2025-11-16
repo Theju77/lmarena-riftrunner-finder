@@ -1,10 +1,24 @@
-# LMArena Riftrunner Finder
+# LMArena Riftrunner Finder - AI Model Detection & Identification Tool
 
-Automated Python tool to identify the **"riftrunner"** anonymous model on [lmarena.ai](https://lmarena.ai) by testing specific prompts and analyzing responses. The "riftrunner" model is widely speculated within the AI community to be an unreleased Gemini 3.0 variant.
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Selenium](https://img.shields.io/badge/selenium-automation-green.svg)](https://www.selenium.dev/)
+
+**Automated AI Model Fingerprinting & Detection Tool** - Python-based web scraper to identify anonymous LLM models on [lmarena.ai](https://lmarena.ai) blind testing platform. Specifically designed to detect the **"riftrunner"** anonymous model through response pattern analysis.
+
+If you’re looking for the anonymous LMArena checkpoint codenamed **"riftrunner"** – the model many in the community believe to be a **Gemini 3.0 Pro** release-candidate – this tool automates the process of finding it on lmarena.ai’s blind testing platform.
+
+In this repository, any mentions of **"Gemini 3"** or **"Gemini 3 Pro"** are just shorthand for this anonymous LMArena model (`riftrunner`), not for any officially released Google Gemini 3 product. Some community posts also refer to it as **"Rift Runner"**, which this README treats as the same model.
+
+🔍 **Keywords**: LMArena, AI model detection, Gemini 3.0 Pro RC finder, LLM fingerprinting, anonymous model identification, chatbot arena, AI benchmarking tool, model comparison automation, riftrunner, Rift Runner
+
+The "riftrunner" model is widely speculated within the AI research community to be an unreleased Gemini 3.0 variant based on behavioral analysis and response patterns.
 
 > **Acknowledgment:** This project is inspired by and based on the fingerprinting technique shared by [Jacen He](https://mp.weixin.qq.com/s?mid=2650934479&sn=fbba9e154fed1d2c128814d2ad546fb4&idx=1&__biz=MzA3Njc1MDU0OQ%3D%3D) from the aardio community. This Python implementation adapts their original approach using Selenium and Chrome automation.
 
 ## ⚠️ Important Disclaimer
+
+> Terminology note: throughout this README, **"Gemini 3"** / **"Gemini 3 Pro"** always refer to the anonymous LMArena model codenamed `riftrunner`, as speculated by the community – not to any officially released Google product.
 
 **Target Model Clarification:** This tool is designed to identify the anonymous model codenamed **"riftrunner"** on LMArena's blind testing platform. This model has been widely speculated to be an unreleased Gemini 3.0 variant within the AI community.
 
@@ -212,6 +226,32 @@ Contributions welcome! Feel free to:
 - Report bugs
 - Suggest features
 - Submit pull requests
+
+---
+
+## 🔍 Related Topics & Use Cases
+
+**AI Model Research:**
+- LLM benchmarking and evaluation
+- Anonymous model identification on chatbot arena platforms
+- AI model fingerprinting techniques
+- Gemini model detection and analysis
+
+**Automation & Scraping:**
+- Selenium web automation for AI platforms
+- Browser automation with Chrome/ChromeDriver
+- Cloudflare bypass techniques
+- Pattern matching and response analysis
+
+**Research Applications:**
+- Comparative LLM analysis
+- Model behavior profiling
+- AI capability testing
+- Blind testing automation
+
+## 🏷️ Tags
+
+`lmarena` `ai-model-detection` `gemini-finder` `llm-fingerprinting` `chatbot-arena` `selenium-automation` `web-scraping` `ai-research` `model-identification` `python-automation` `gemini-3` `riftrunner` `ai-benchmarking` `model-testing` `chrome-automation`
 
 ---
 
