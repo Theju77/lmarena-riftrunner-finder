@@ -1,6 +1,8 @@
 # LMArena Gemini Finder
 
-Automated Python tool to identify Gemini 3.0 models on [lmarena.ai](https://lmarena.ai) by testing specific prompts and analyzing responses.
+Automated Python tool to identify the rumored **Gemini 3.0** model on [lmarena.ai](https://lmarena.ai) by testing specific prompts and analyzing responses. This tool specifically targets the widely-discussed Gemini 3.0 variant that has been circulating in the AI community.
+
+> **Acknowledgment:** This project is inspired by and based on the fingerprinting technique shared by [Jacen He](https://mp.weixin.qq.com/s?mid=2650934479&sn=fbba9e154fed1d2c128814d2ad546fb4&idx=1&__biz=MzA3Njc1MDU0OQ%3D%3D) from the aardio community. This Python implementation adapts their original approach using Selenium and Chrome automation.
 
 ## 🎯 Purpose
 
@@ -34,7 +36,14 @@ This tool automates the process of finding specific AI models (particularly Gemi
 
 ## 🚀 Quick Start
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/aezizhu/lmarena-gemini3-finder.git
+cd lmarena-gemini3-finder
+```
+
+### 2. Install Dependencies
 
 ```bash
 # Install Python packages
@@ -45,28 +54,20 @@ pip install -r requirements.txt
 # Or download from: https://www.google.com/chrome/
 ```
 
-### 2. Configure
+### 3. Configuration
 
-Edit `config.json` to customize your search:
+The `config.json` file contains a **fixed prompt and search pattern** specifically designed to identify Gemini 3.0 models. These values are tuned to find specific fingerprint characteristics in model responses and **should not be modified**.
 
-```json
-{
-  "user_prompt": "Your custom prompt here",
-  "search_pattern": "regex pattern to match",
-  "proxy": null,
-  "timeout": 60000,
-  "retry_on_no_match": true
-}
-```
+**Optional Configuration:**
+You can adjust these settings in `config.json` if needed:
 
-**Configuration Options:**
-- `user_prompt`: The prompt to send to AI models
-- `search_pattern`: Regex pattern to identify target model responses
-- `proxy`: Proxy URL (e.g., `"socks5://127.0.0.1:1080"`) or `null`
+- `proxy`: Proxy URL (e.g., `"socks5://127.0.0.1:1080"`) or `null` for direct connection
 - `timeout`: Maximum wait time in milliseconds (default: 60000)
-- `retry_on_no_match`: Continue retrying if no match found (default: true)
+- `retry_on_no_match`: Continue retrying until match found (default: true)
 
-### 3. Run
+**Note:** The `user_prompt` and `search_pattern` fields use a specialized fingerprinting technique to reliably identify target models. Changing these values will prevent the tool from working correctly.
+
+### 4. Run
 
 ```bash
 # Run with visible browser
@@ -104,16 +105,6 @@ To use a SOCKS5 proxy (e.g., for network routing):
 ```
 
 The tool automatically detects and converts `SOCKS5://` format to `socks5://`.
-
-### Custom Patterns
-
-The search pattern uses Python regex. Escape special characters:
-
-```json
-{
-  "search_pattern": "\\.skin%\\(\\).*<@'\\n\\n\\n'@>"
-}
-```
 
 ### Timeout Adjustment
 
