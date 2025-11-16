@@ -1,12 +1,12 @@
-# LMArena Gemini Finder
+# LMArena Riftrunner Finder
 
-Automated Python tool to identify the rumored **Gemini 3.0** model on [lmarena.ai](https://lmarena.ai) by testing specific prompts and analyzing responses. This tool specifically targets the widely-discussed Gemini 3.0 variant that has been circulating in the AI community.
+Automated Python tool to identify the **"riftrunner"** anonymous model on [lmarena.ai](https://lmarena.ai) by testing specific prompts and analyzing responses. The "riftrunner" model is widely speculated within the AI community to be an unreleased Gemini 3.0 variant.
 
 > **Acknowledgment:** This project is inspired by and based on the fingerprinting technique shared by [Jacen He](https://mp.weixin.qq.com/s?mid=2650934479&sn=fbba9e154fed1d2c128814d2ad546fb4&idx=1&__biz=MzA3Njc1MDU0OQ%3D%3D) from the aardio community. This Python implementation adapts their original approach using Selenium and Chrome automation.
 
 ## ⚠️ Important Disclaimer
 
-**Target Model Clarification:** This tool is designed to identify the anonymous model codenamed **"riftrunner"** on LMArena's blind testing platform. This model has been widely discussed and speculated to be an unreleased Gemini 3.0 variant within the AI community. 
+**Target Model Clarification:** This tool is designed to identify the anonymous model codenamed **"riftrunner"** on LMArena's blind testing platform. This model has been widely speculated to be an unreleased Gemini 3.0 variant within the AI community.
 
 **This tool does NOT target:**
 - Any officially released Google Gemini models (Gemini 1.0, Gemini 1.5, Gemini 2.0, etc.)
@@ -17,9 +17,9 @@ Automated Python tool to identify the rumored **Gemini 3.0** model on [lmarena.a
 
 ## 🎯 Purpose
 
-This tool automates the process of finding specific AI models (particularly Gemini 3.0) on LMArena's blind testing platform by:
+This tool automates the process of finding the **"riftrunner"** anonymous model on LMArena's blind testing platform by:
 - Submitting custom prompts with images
-- Analyzing AI responses for specific patterns
+- Analyzing AI responses for specific fingerprint patterns
 - Automatically retrying until a match is found
 - Supporting proxy configurations for network access
 
@@ -28,9 +28,9 @@ This tool automates the process of finding specific AI models (particularly Gemi
 - **Web Automation**: Uses undetected-chromedriver with real Chrome for reliable automation
 - **Cloudflare Bypass**: Automatically bypasses bot detection and verification
 - **Persistent Sessions**: Saves Chrome profile - faster on subsequent runs
-- **Smart Pattern Matching**: Flexible regex that catches all Gemini 3.0 code variations
+- **Smart Pattern Matching**: Flexible regex that catches riftrunner's unique response patterns
 - **Error Detection**: Automatically detects and retries generation errors
-- **Model Identification**: Clearly shows which model (A or B) is Gemini 3.0
+- **Model Identification**: Clearly shows which model (A or B) is riftrunner
 - **Interactive Mode**: Browser stays open after finding model for testing
 - **Auto-retry**: Continues testing until the target model is found
 - **Proxy Support**: Compatible with SOCKS5 proxies for network routing
@@ -50,8 +50,8 @@ This tool automates the process of finding specific AI models (particularly Gemi
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/aezizhu/lmarena-gemini3-finder.git
-cd lmarena-gemini3-finder
+git clone https://github.com/aezizhu/lmarena-riftrunner-finder.git
+cd lmarena-riftrunner-finder
 ```
 
 ### 2. Install Dependencies
@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ### 3. Configuration
 
-The `config.json` file contains a **fixed prompt and search pattern** specifically designed to identify Gemini 3.0 models. These values are tuned to find specific fingerprint characteristics in model responses and **should not be modified**.
+The `config.json` file contains a **fixed prompt and search pattern** specifically designed to identify the "riftrunner" model. These values are tuned to find specific fingerprint characteristics in model responses and **should not be modified**.
 
 **Optional Configuration:**
 You can adjust these settings in `config.json` if needed:
@@ -132,7 +132,7 @@ For slower connections or complex prompts:
 ### Project Structure
 
 ```
-lmarena-gemini-finder/
+lmarena-riftrunner-finder/
 ├── lmarena_finder.py   # Main application
 ├── config.json         # Configuration file
 ├── requirements.txt    # Python dependencies
