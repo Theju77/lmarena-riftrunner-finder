@@ -1,5 +1,5 @@
-# LMArena Riftrunner Finder - AI Model Detection & Identification Tool
-
+# LMArena Riftrunner Finder - AI Model Detection & Identification Tool(Retired)
+**Gemini 3 released, this repo retired.
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Selenium](https://img.shields.io/badge/selenium-automation-green.svg)](https://www.selenium.dev/)
